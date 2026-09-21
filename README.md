@@ -12,7 +12,7 @@ Hooks 5 Linux syscalls to intercept file access from non-root processes:
 | `newfstatat` | 79 | Block `stat()` on root files |
 | `statx` | 291 | Block `statx()` on root files |
 | `openat` | 56 | Block `open()` on root files |
-| `getdents64` | 61 | Filter directory listings to hide root entries |
+| `getdents64` | 61 | Filter directory listings to hide root entries | 
 
 Hidden paths include: `/system/bin/su`, `/data/adb/`, Magisk files, Xposed, BusyBox, etc.
 
